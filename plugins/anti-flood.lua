@@ -49,7 +49,7 @@ local function pre_process (msg)
       if msgs > NUM_MSG_MAX then
         local receiver = get_receiver(msg)
         local user = msg.from.id
-        local text = 'User '..user..' is flooding'
+        local text = 'User '..user..' Spamming\nBanned'
         local chat = msg.to.id
 
         send_msg(receiver, text, ok_cb, nil)
